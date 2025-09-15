@@ -4,26 +4,27 @@ class suminherit{
 	int c = 10;
 	void sum(){
 		int sum = a+b+c;
-		System.out.println("sum = "+sum)	
+		System.out.println("sum = "+sum);	
 	}
 }
 
 class child extends suminherit{
-	void check{
+	void check(){
 		int total  = a+b+c;
 		if(total>=45){
 			System.out.println("true");
 
-}else{
-	sutract =a-b-c; 
-	System.out.pritln("sub"+subtract)
-}		
-}
+        }else{
+	        int subtract =a-b-c; 
+	        System.out.println("sub"+subtract);
+        }
+
+    }
 }
 
-class Main{
-	pulic static void main(Strings[] args){
+public class Main{
+	public static void main(String[] args){
 		child chil = new child();
 		chil.check();
-}
+    }
 }
