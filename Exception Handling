@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Xyz {
-    void performDivision(String[] args) {
+    void performDivision() {
         Scanner sc = new Scanner(System.in);
 
         try {
@@ -21,7 +21,7 @@ class Xyz {
     }
 }
 public class DivisionWithXyz {
-    public static void main(String[] args) {
+    public static void main() {
         Xyz cc = new Xyz();      
         cc.performDivision(args);
     }
