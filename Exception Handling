@@ -16,13 +16,13 @@ class Xyz {
         } 
         catch (ArithmeticException e) {
             System.out.println("Denominator should not be zero.\n");
-            DivisionWithXyz.main(args); 
+            DivisionWithXyz.main(); 
         }
     }
 }
 public class DivisionWithXyz {
     public static void main() {
         Xyz cc = new Xyz();      
-        cc.Division(args);
+        cc.Division();
     }
 }
