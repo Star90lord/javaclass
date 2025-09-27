@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class ExceptionHandling {
-    public void performDivision() {
+class ExceptionHandling{
+    public void performDivision(){
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
@@ -10,12 +10,13 @@ class ExceptionHandling {
         System.out.print("Enter the second number: ");
         int b = sc.nextInt();
 
-        try {
+        try{
             int result = a / b;
             System.out.println("Result: " + result);
-        } catch (ArithmeticException ae) {
-            System.out.println("Division by zero is invalid");
-            performDivision();
+        } 
+        catch(ArithmeticException ae){
+             System.out.println("Division by zero is invalid");
+             performDivision();
         }
     }
 }
